@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83DFF9AB7D3CD71E85CF0DC4 /* Pods_MiniApp39_Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681A0017F865525CCCF8213F /* Pods_MiniApp39_Charts.framework */; };
 		87E2CAC22801467E00BD269A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2CAC12801467E00BD269A /* AppDelegate.swift */; };
 		87E2CAC42801467E00BD269A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2CAC32801467E00BD269A /* SceneDelegate.swift */; };
 		87E2CAC62801467E00BD269A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2CAC52801467E00BD269A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		681A0017F865525CCCF8213F /* Pods_MiniApp39_Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniApp39_Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E2CABE2801467E00BD269A /* MiniApp39-Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp39-Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E2CAC12801467E00BD269A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E2CAC32801467E00BD269A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		87E2CACA2801467F00BD269A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E2CACD2801467F00BD269A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E2CACF2801467F00BD269A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA1DBCB78BD994002BC2EF4 /* Pods-MiniApp39-Charts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp39-Charts.release.xcconfig"; path = "Target Support Files/Pods-MiniApp39-Charts/Pods-MiniApp39-Charts.release.xcconfig"; sourceTree = "<group>"; };
+		F3C79F4C07EB52947000F9BB /* Pods-MiniApp39-Charts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp39-Charts.debug.xcconfig"; path = "Target Support Files/Pods-MiniApp39-Charts/Pods-MiniApp39-Charts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83DFF9AB7D3CD71E85CF0DC4 /* Pods_MiniApp39_Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BCDBAD3CD0AFC450268D293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				681A0017F865525CCCF8213F /* Pods_MiniApp39_Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87E2CAB52801467E00BD269A = {
 			isa = PBXGroup;
 			children = (
 				87E2CAC02801467E00BD269A /* MiniApp39-Charts */,
 				87E2CABF2801467E00BD269A /* Products */,
+				9727C5A0C261B25C5F160EE5 /* Pods */,
+				4BCDBAD3CD0AFC450268D293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "MiniApp39-Charts";
 			sourceTree = "<group>";
 		};
+		9727C5A0C261B25C5F160EE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3C79F4C07EB52947000F9BB /* Pods-MiniApp39-Charts.debug.xcconfig */,
+				CDA1DBCB78BD994002BC2EF4 /* Pods-MiniApp39-Charts.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87E2CAD22801467F00BD269A /* Build configuration list for PBXNativeTarget "MiniApp39-Charts" */;
 			buildPhases = (
+				2A3EFC22BC9CFAFF110C7116 /* [CP] Check Pods Manifest.lock */,
 				87E2CABA2801467E00BD269A /* Sources */,
 				87E2CABB2801467E00BD269A /* Frameworks */,
 				87E2CABC2801467E00BD269A /* Resources */,
+				67595B86A84E49C577D029EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A3EFC22BC9CFAFF110C7116 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniApp39-Charts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67595B86A84E49C577D029EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp39-Charts/Pods-MiniApp39-Charts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniApp39-Charts/Pods-MiniApp39-Charts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniApp39-Charts/Pods-MiniApp39-Charts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87E2CABA2801467E00BD269A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		87E2CAD32801467F00BD269A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C79F4C07EB52947000F9BB /* Pods-MiniApp39-Charts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		87E2CAD42801467F00BD269A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA1DBCB78BD994002BC2EF4 /* Pods-MiniApp39-Charts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
